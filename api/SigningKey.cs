@@ -20,7 +20,7 @@ namespace Refactorx.Host
         public SigningKey()
         {
 /*
-    Generate private key. Used some password.
+    Generate private key. Use some password.
     1. openssl genrsa -des3 -out private.pem 2048
     Get private key in PEM format
     2. openssl rsa -in private.pem -out private_unencrypted.pem -outform PEM
