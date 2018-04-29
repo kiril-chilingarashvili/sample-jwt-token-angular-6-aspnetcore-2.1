@@ -1,0 +1,7 @@
+<div>
+  <h3 *ngIf="$username">Welcome {{$username}}
+    <button [routerLink]="['/logout']">Logout</button>
+  </h3>
+  <h3 *ngIf="$isLoading">(Loading ...)</h3>
+  <router-outlet></router-outlet>
+</div>

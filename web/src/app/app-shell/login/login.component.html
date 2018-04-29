@@ -1,0 +1,29 @@
+<div>
+  <h3>Login</h3>
+  <div class="form">
+    <form #Form="ngForm"
+      (ngSubmit)="$login()">
+      <div>
+        <label for="username">Username</label>
+        <input type="text"
+          name="username"
+          required
+          [(ngModel)]="$data.username">
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password"
+          name="password"
+          required
+          [(ngModel)]="$data.password">
+      </div>
+
+      <div>
+        <button (click)="$login()">Login</button>
+      </div>
+    </form>
+    <p *ngIf="$error"
+      class="error">{{$error}}</p>
+  </div>
+</div>

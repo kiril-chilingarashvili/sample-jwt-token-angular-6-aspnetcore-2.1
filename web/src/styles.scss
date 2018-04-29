@@ -1,0 +1,17 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.debug {
+  border: 1px solid red;
+}
+.debug-box{
+  -webkit-box-shadow: 0 0 0 1px red;
+  -moz-box-shadow: 0 0 0 1px red;
+  -webkit-box-shadow: 0 0 0 1px red;
+  -moz-box-shadow: 0 0 0 1px red;
+  box-shadow: 0 0 0 1px red;
+}

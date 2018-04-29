@@ -1,0 +1,43 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/.kube": true,
+        "**/.vs": true,
+        "**/.vscode": true
+    },
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/*.csproj": true,
+        "**/*.csproj.user": true,
+        "**/*.sln": true,
+        "**/*.sln.user": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": true,
+        "bin": true,
+        "obj": true,
+        "Properties": true
+    },
+    "editor.renderWhitespace": "all",
+    "editor.detectIndentation": false,
+    "editor.renderIndentGuides": true,
+    "editor.renderControlCharacters": true,
+    "editor.insertSpaces": true,
+    "editor.useTabStops": true,
+    "editor.autoIndent": true,
+    "editor.formatOnSave": false,
+    "html.format.enable": true,
+    "html.format.wrapLineLength": 1000,
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": false,
+    "html.format.wrapAttributes": "force",
+    "tslint.enable": true,
+    "typescript.reportStyleChecksAsWarnings": true
+}

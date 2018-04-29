@@ -1,0 +1,53 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:5555",
+      "sourceMaps": true,
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ],
+      "webRoot": "${workspaceRoot}",
+      "userDataDir": "${workspaceRoot}/.vscode/chrome",
+      "sourceMapPathOverrides": {
+        "webpack:///./~/*": "${webRoot}/node_modules/*",       // Example: "webpack:///./~/querystring/index.js" -> "/Users/me/project/node_modules/querystring/index.js"
+        "webpack:///./*":   "${webRoot}/*",                    // Example: "webpack:///./src/app.js" -> "/users/me/project/src/app.js",
+        "webpack:///*":     "*",                               // Example: "webpack:///C:/project/app.ts" -> "C:/project/app.ts"
+        "webpack:///src/*": "${webRoot}/*",                    // Example: "webpack:///src/App.js" -> "C:/project/src/App.js"
+        "meteor://💻app/*": "${webRoot}/*",                    // Example: "meteor://💻app/main.ts" -> "c:/code/main.ts"
+
+
+        "webpack:/~/*": "${webRoot}/node_modules/*",       // Example: "webpack:/./~/querystring/index.js" -> "/Users/me/project/node_modules/querystring/index.js"
+        "webpack:/src/*":   "${webRoot}/*",
+    }
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach Protractor Chrome",
+      "address": "localhost",
+      "port": 49152,
+      "pathMapping": {
+        "/": "${workspaceRoot}",
+        "/base/": "${workspaceRoot}/"
+      }
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach Karma Chrome",
+      "address": "localhost",
+      "port": 9333,
+      "pathMapping": {
+        "/": "${workspaceRoot}",
+        "/base/": "${workspaceRoot}/"
+      }
+    }
+  ]
+}

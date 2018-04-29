@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>refactorx-web-web-front.Development</id>
+        <version>0.0.0</version>
+        <authors>Refactorx</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Automatic deployment</description>
+    </metadata>
+    <files>
+        <file src="dist\**\*.*" target="" />
+    </files>
+</package>
