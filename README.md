@@ -1,4 +1,4 @@
-# Sample auth using JWT token and reasource owner flow using Angular-6 and ASP.NET Core-2.1
+# Sample - Authentication using JWT token and resource owner flow using Angular-6 and ASP.NET Core-2.1
 
 - open and run "api" using Visual Studio 2017 (or command line dotnet run)
 - run frontend by opening "web" and running npm i && npm start
